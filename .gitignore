@@ -1,0 +1,23 @@
+# Logs and temporary files
+*.log
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Build/Dist directories (if using a bundler or transpiler)
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# Cache and IDE-specific files
+*.cache
+*.idea/
+.vscode/
