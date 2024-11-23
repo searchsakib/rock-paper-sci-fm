@@ -39,27 +39,33 @@
       <div id="default_view" class="relative">
         <div>
           <div class="flex items-center justify-center gap-40">
-            <div
-              class="border-[18px] rounded-full p-6 border-[#526EF4] bg-white size-32 shadow-inner drop-shadow-2xl shadow-gray-200"
-            >
-              <img src="../assets/images/icon-paper.svg" alt="paper image" />
-            </div>
-            <div
-              class="border-[18px] rounded-full p-6 border-[#E9A51E] bg-white size-32"
-            >
-              <img
-                src="../assets/images/icon-scissors.svg"
-                alt="scissors image"
-              />
-            </div>
+            <button id="paper_btn">
+              <div
+                class="border-[18px] rounded-full p-6 border-[#526EF4] bg-white size-32 shadow-inner drop-shadow-2xl shadow-gray-200"
+              >
+                <img src="../assets/images/icon-paper.svg" alt="paper image" />
+              </div>
+            </button>
+            <button>
+              <div
+                class="border-[18px] rounded-full p-6 border-[#E9A51E] bg-white size-32"
+              >
+                <img
+                  src="../assets/images/icon-scissors.svg"
+                  alt="scissors image"
+                />
+              </div>
+            </button>
           </div>
 
           <div class="flex items-center justify-center">
-            <div
-              class="border-[18px] rounded-full p-6 border-[#DE3A55] bg-white mt-20"
-            >
-              <img src="../assets/images/icon-rock.svg" alt="rock image" />
-            </div>
+            <button>
+              <div
+                class="border-[18px] rounded-full p-6 border-[#DE3A55] bg-white mt-20"
+              >
+                <img src="../assets/images/icon-rock.svg" alt="rock image" />
+              </div>
+            </button>
           </div>
         </div>
         <div class="absolute left-[710px] top-12 -z-10">
@@ -69,27 +75,29 @@
       <!-- ! default view ends -->
 
       <!-- after click view starts  -->
-      <!-- <div class="relative">
+      <div class="relative hidden" id="vs_view">
         <div>
           <div class="flex items-center justify-center gap-20">
             <div>
               <h2 class="text-center text-xl font-medium text-white mb-10">
                 You Picked
               </h2>
-              <div
-                class="border-[18px] rounded-full p-10 flex items-center justify-center border-[#526EF4] bg-white shadow-inner drop-shadow-2xl shadow-gray-200 size-52"
-              >
-                <img
-                  class="w-20"
-                  src="../assets/images/icon-paper.svg"
-                  alt="paper image"
-                />
-              </div>
-            </div> -->
+              <button>
+                <div
+                  class="border-[18px] rounded-full p-10 flex items-center justify-center border-[#526EF4] bg-white shadow-inner drop-shadow-2xl shadow-gray-200 size-52"
+                >
+                  <img
+                    class="w-20"
+                    src="../assets/images/icon-paper.svg"
+                    alt="paper image"
+                  />
+                </div>
+              </button>
+            </div>
 
-      <!-- ! you win/lose message starts -->
-      <!-- 
-            <div class="text-white text-center pt-12">
+            <!-- ! you win/lose message starts -->
+
+            <!-- <div class="text-white text-center pt-12">
               <h2 class="text-3xl font-medium pb-4">YOU LOSE</h2>
               <button
                 class="text-sm text-red-500 px-8 font-semibold py-[6px] rounded-md bg-white"
@@ -98,25 +106,27 @@
               </button>
             </div> -->
 
-      <!-- ! you win/lose message ends -->
+            <!-- ! you win/lose message ends -->
 
-      <!-- <div>
+            <div>
               <h2 class="text-center text-xl font-medium text-white mb-10">
                 Computer Picked
               </h2>
-              <div
-                class="border-[18px] rounded-full p-6 border-[#E9A51E] bg-white shadow-inner drop-shadow-2xl shadow-gray-200 size-52 flex items-center justify-center"
-              >
-                <img
-                  class="w-20"
-                  src="../assets/images/icon-scissors.svg"
-                  alt="scissors image"
-                />
-              </div>
+              <button>
+                <div
+                  class="border-[18px] rounded-full p-6 border-[#E9A51E] bg-white shadow-inner drop-shadow-2xl shadow-gray-200 size-52 flex items-center justify-center"
+                >
+                  <img
+                    class="w-20"
+                    src="../assets/images/icon-scissors.svg"
+                    alt="scissors image"
+                  />
+                </div>
+              </button>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- after click view ends -->
 
       <!--! modal view -->
