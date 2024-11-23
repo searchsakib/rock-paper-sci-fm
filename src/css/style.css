@@ -1,1 +1,5 @@
 /* using tailwind, thats why it's empty */
+
+/* have to run this every time after project initialization, otherwise the tailwind classes don't work properly */
+
+/* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */
