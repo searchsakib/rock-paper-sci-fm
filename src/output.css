@@ -603,6 +603,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .size-32 {
   width: 8rem;
   height: 8rem;
