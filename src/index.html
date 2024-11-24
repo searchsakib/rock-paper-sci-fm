@@ -140,20 +140,27 @@
 
       <!--! modal view -->
 
-      <div id="rules_modal" class="hidden">
+      <div
+        id="rules_modal"
+        class="hidden fixed z-50 top-0 left-0 w-full h-full overflow-auto bg-[#00000066] flex items-center justify-center"
+      >
         <div
-          class="bg-white py-7 items-center justify-center max-w-sm mx-auto rounded-md flex flex-col"
+          class="bg-white p-7 items-center justify-center max-w-sm mx-auto rounded-md flex flex-col"
         >
           <div class="flex items-center gap-64 pb-8">
             <h2 class="font-bold text-xl text-[#1C2D4E]">RULES</h2>
             <button id="close_btn">
-              <img src="../assets/images/icon-close.svg" alt="close icon" />
+              <img
+                class="scale-150"
+                src="../assets/images/icon-close.svg"
+                alt="close icon"
+              />
             </button>
           </div>
           <img
             class="max-w-sm"
             src="../assets/images/image-rules.svg"
-            alt="rule of the game"
+            alt="rules of the game"
           />
         </div>
       </div>
