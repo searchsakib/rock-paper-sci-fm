@@ -40,17 +40,17 @@
         <div>
           <div class="flex items-center justify-center gap-40">
             <button
-              class="transition-transform duration-300 hover:scale-105"
+              class="transition-transform duration-300 hover:scale-105 game-btn"
               id="paper_btn"
             >
               <div
-                class="border-[18px] rounded-full p-6 border-[#526EF4] bg-white size-32 shadow-inner drop-shadow-2xl shadow-gray-200 scale-150"
+                class="border-[18px] rounded-full p-6 border-[#526EF4] bg-white size-32 scale-150"
               >
                 <img src="../assets/images/icon-paper.svg" alt="paper image" />
               </div>
             </button>
             <button
-              class="transition-transform duration-300 hover:scale-105"
+              class="transition-transform duration-300 hover:scale-105 game-btn"
               id="scissors_btn"
             >
               <div
@@ -66,7 +66,7 @@
 
           <div class="flex items-center justify-center">
             <button
-              class="transform duration-300 hover:scale-105"
+              class="transform duration-300 hover:scale-105 game-btn"
               id="rock_btn"
             >
               <div
@@ -86,19 +86,31 @@
       <!-- after click view starts  -->
       <div class="relative hidden" id="vs_view">
         <div>
-          <div class="flex items-center justify-center gap-20">
+          <div class="flex items-center justify-center gap-36">
             <div>
-              <h2 class="text-center text-xl font-medium text-white mb-10">
+              <h2 class="text-center text-xl font-medium text-white mb-16">
                 You Picked
               </h2>
               <button>
                 <div
-                  class="border-[18px] rounded-full p-10 flex items-center justify-center border-[#526EF4] bg-white shadow-inner drop-shadow-2xl shadow-gray-200 size-52"
+                  class="border-[18px] rounded-full p-6 border-[#526EF4] bg-white size-32 scale-150"
+                  id="color_img"
                 >
                   <img
-                    class="w-20"
+                    class="w-20 hidden"
+                    id="img_paper"
                     src="../assets/images/icon-paper.svg"
-                    alt="paper image"
+                    alt="paper icon"
+                  /><img
+                    class="w-20 hidden"
+                    id="img_scissors"
+                    src="../assets/images/icon-scissors.svg"
+                    alt="scissors icon"
+                  /><img
+                    class="w-20 hidden"
+                    id="img_rock"
+                    src="../assets/images/icon-rock.svg"
+                    alt="rock icon"
                   />
                 </div>
               </button>
@@ -118,12 +130,12 @@
             <!-- ! you win/lose message ends -->
 
             <div>
-              <h2 class="text-center text-xl font-medium text-white mb-10">
+              <h2 class="text-center text-xl font-medium text-white mb-16">
                 Computer Picked
               </h2>
               <button>
                 <div
-                  class="border-[18px] rounded-full p-6 border-[#E9A51E] bg-white shadow-inner drop-shadow-2xl shadow-gray-200 size-52 flex items-center justify-center"
+                  class="border-[#E9A51E] bg-white flex items-center justify-center border-[18px] rounded-full p-6 size-32 scale-150"
                 >
                   <img
                     class="w-20"
