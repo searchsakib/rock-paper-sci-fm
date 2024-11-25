@@ -25,10 +25,12 @@ export const closeModalBtn = () => {
 
 // selecting from rock,papers,scissors and game logic
 export const showVsMode = (e) => {
+  // rng logic
   const rps = ["paper_btn", "scissors_btn", "rock_btn"];
   const randomNum = Math.floor(Math.random() * 3);
   const RNG = rps[randomNum];
 
+  // dynamic ui based on computer pick(rng)
   if (RNG === "paper_btn") {
     computerPaper.classList.toggle("hidden");
     computerPaper.classList.add("flex");
@@ -41,8 +43,10 @@ export const showVsMode = (e) => {
   }
 
   console.log("Computers Pick: " + RNG);
+
   const btnSelect = e.target.closest(".game-btn");
 
+  // dynamic ui based on players pick
   if (btnSelect.id === "paper_btn") {
     defaultView.classList.toggle("hidden");
     vsView.classList.toggle("hidden");
@@ -91,9 +95,3 @@ export const showVsMode = (e) => {
   }
   console.log("My pick: " + e.target.closest(".game-btn").id);
 };
-
-// export const computerAI = () => {
-//   const rps = ["paper_btn", "scissors_btn", "rock_btn"];
-//   const randomNum = Math.floor(Math.random() * 3);
-//   const RNG = rps[randomNum];
-// };
