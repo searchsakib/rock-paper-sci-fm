@@ -17,6 +17,11 @@
 
     <!-- js file  -->
     <script type="module" src="./js/main.js"></script>
+    <!-- lottie animation script  -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </head>
   <body class="bg-gradient-to-br from-[#1F3656] to-[#151B3D] h-screen">
     <header class="max-w-xl mx-auto pt-20">
@@ -91,9 +96,19 @@
               <h2 class="text-center text-xl font-medium text-white mb-16">
                 You Picked
               </h2>
-
+              <div class="hidden" id="confetti">
+                <dotlottie-player
+                  class="absolute top-0 left-[425px] z-50"
+                  src="https://lottie.host/20bec338-5560-4ded-8350-69353647fa60/vaf6IcgFZf.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 300px; height: 300px"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </div>
               <div
-                class="border-[18px] rounded-full p-6 border-[#526EF4] bg-white size-32 scale-150"
+                class="border-[18px] rounded-full p-6 bg-white size-32 scale-150"
                 id="color_img"
               >
                 <img
@@ -117,14 +132,16 @@
 
             <!-- ! you win/lose message starts -->
 
-            <div class="text-white text-center pt-12">
-              <h2 class="text-3xl font-medium pb-4" id="result_text"></h2>
-              <button
-                class="text-sm text-red-500 px-8 font-semibold py-[6px] rounded-md bg-white"
-              >
-                <a href="">PLAY AGAIN</a>
-              </button>
-            </div>
+            <a href="">
+              <div class="text-white text-center pt-12">
+                <h2 class="text-3xl font-medium pb-4" id="result_text"></h2>
+                <button
+                  class="text-sm text-red-500 px-8 font-semibold py-[6px] rounded-md bg-white"
+                >
+                  PLAY AGAIN
+                </button>
+              </div>
+            </a>
 
             <!-- ! you win/lose message ends -->
 

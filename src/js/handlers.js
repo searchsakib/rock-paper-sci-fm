@@ -3,6 +3,7 @@ import {
   computerPaper,
   computerRock,
   computerScissors,
+  confetti,
   defaultView,
   paperImage,
   resultText,
@@ -60,6 +61,7 @@ export const showVsMode = (e) => {
       resultText.innerText = "YOU LOSE!";
     } else {
       console.log("YOU WIN");
+      confetti.classList.toggle("hidden");
       resultText.innerText = "YOU WIN!";
     }
   } else if (btnSelect.id === "scissors_btn") {
@@ -72,6 +74,7 @@ export const showVsMode = (e) => {
       resultText.innerText = "DRAW!";
     } else if (RNG === "paper_btn") {
       console.log("YOU WIN");
+      confetti.classList.toggle("hidden");
       resultText.innerText = "YOU WIN!";
     } else {
       console.log("YOU LOSE");
@@ -90,8 +93,10 @@ export const showVsMode = (e) => {
       resultText.innerText = "YOU LOSE!";
     } else {
       console.log("YOU WIN");
+      confetti.classList.toggle("hidden");
       resultText.innerText = "YOU WIN!";
     }
   }
   console.log("My pick: " + e.target.closest(".game-btn").id);
+  console.log(confetti);
 };
