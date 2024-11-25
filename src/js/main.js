@@ -6,4 +6,5 @@ modalCloseBtn.addEventListener("click", closeModalBtn);
 
 gameBtn.forEach((singleBtn) => {
   singleBtn.addEventListener("click", showVsMode);
+  // singleBtn.addEventListener("click", computerAI);
 });

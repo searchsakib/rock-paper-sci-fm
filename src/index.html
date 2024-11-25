@@ -118,33 +118,54 @@
 
             <!-- ! you win/lose message starts -->
 
-            <!-- <div class="text-white text-center pt-12">
-              <h2 class="text-3xl font-medium pb-4">YOU LOSE</h2>
+            <div class="text-white text-center pt-12">
+              <h2 class="text-3xl font-medium pb-4" id="result_text"></h2>
               <button
                 class="text-sm text-red-500 px-8 font-semibold py-[6px] rounded-md bg-white"
               >
                 PLAY AGAIN
               </button>
-            </div> -->
+            </div>
 
             <!-- ! you win/lose message ends -->
 
+            <!-- computer pick starts  -->
             <div>
               <h2 class="text-center text-xl font-medium text-white mb-16">
                 Computer Picked
               </h2>
-              <button>
-                <div
-                  class="border-[#E9A51E] bg-white flex items-center justify-center border-[18px] rounded-full p-6 size-32 scale-150"
-                >
-                  <img
-                    class="w-20"
-                    src="../assets/images/icon-scissors.svg"
-                    alt="scissors image"
-                  />
-                </div>
-              </button>
+
+              <div
+                class="bg-white items-center justify-center border-[18px] rounded-full p-6 size-32 scale-150 paper_btn border-[#526EF4] hidden"
+              >
+                <img
+                  class="w-20"
+                  src="../assets/images/icon-paper.svg"
+                  alt="computer picked paper"
+                />
+              </div>
+
+              <div
+                class="bg-white items-center justify-center border-[18px] rounded-full p-6 size-32 scale-150 scissors_btn border-[#E9A51E] hidden"
+              >
+                <img
+                  class="w-20"
+                  src="../assets/images/icon-scissors.svg"
+                  alt="computer picked scissors"
+                />
+              </div>
+
+              <div
+                class="bg-white items-center justify-center border-[18px] rounded-full p-6 size-32 scale-150 rock_btn border-[#DE3A55] hidden"
+              >
+                <img
+                  class="w-20"
+                  src="../assets/images/icon-rock.svg"
+                  alt="computer picked rock"
+                />
+              </div>
             </div>
+            <!-- computer pick ends  -->
           </div>
         </div>
       </div>

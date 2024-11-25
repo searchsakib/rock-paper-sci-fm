@@ -8,3 +8,7 @@ export const scissorsImage = document.getElementById("img_scissors");
 export const rockImage = document.getElementById("img_rock");
 export const colorImg = document.getElementById("color_img");
 export const gameBtn = document.querySelectorAll(".game-btn");
+export const computerPaper = document.querySelector(".paper_btn");
+export const computerScissors = document.querySelector(".scissors_btn");
+export const computerRock = document.querySelector(".rock_btn");
+export const resultText = document.getElementById("result_text");
