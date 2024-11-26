@@ -24,32 +24,34 @@
     ></script>
   </head>
   <body class="bg-gradient-to-br from-[#1F3656] to-[#151B3D] h-screen">
-    <header class="max-w-xl mx-auto pt-20">
+    <header class="max-w-xl mx-auto px-5 pt-10 lg:pt-20">
       <div
-        class="flex justify-between items-center border-[#5B6B85] border-2 text-white p-4 rounded-lg text-center"
+        class="flex justify-between items-center border-[#5B6B85] border-2 text-white p-4 rounded-lg text-center gap-7 lg:gap-0"
       >
-        <div class="text-2xl font-semibold text-left leading-6">
-          <img src="../assets/images/logo.svg" alt="" />
+        <div class="text-left">
+          <img src="../assets/images/logo.svg" alt="logo" />
         </div>
         <div>
-          <div class="bg-white rounded-md px-8 py-4">
+          <div class="bg-white rounded-md px-8 py-4 scale-90 lg:scale-100">
             <p class="text-[#848BDB] font-semibold tracking-widest">SCORE</p>
             <p class="text-4xl font-bold text-[#56526B]">12</p>
           </div>
         </div>
       </div>
     </header>
-    <main class="pt-16">
+    <main class="pt-16 lg:pt-24">
       <!-- ! default view starts  -->
       <div id="default_view" class="relative">
         <div>
-          <div class="flex items-center justify-center gap-40">
+          <div
+            class="flex items-center justify-center gap-10 sm:gap-16 md:gap-20 lg:gap-28 xl:gap-32 2xl:gap-40"
+          >
             <button
-              class="transition-transform duration-300 hover:scale-105 game-btn"
+              class="transition-transform duration-300 lg:hover:scale-105 game-btn"
               id="paper_btn"
             >
               <div
-                class="border-[18px] rounded-full p-6 border-[#526EF4] bg-white size-32 scale-150"
+                class="border-[18px] rounded-full p-6 border-[#526EF4] bg-white size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150"
               >
                 <img src="../assets/images/icon-paper.svg" alt="paper image" />
               </div>
@@ -59,7 +61,7 @@
               id="scissors_btn"
             >
               <div
-                class="border-[18px] rounded-full p-6 border-[#E9A51E] bg-white size-32 scale-150"
+                class="border-[18px] rounded-full p-6 border-[#E9A51E] bg-white size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150"
               >
                 <img
                   src="../assets/images/icon-scissors.svg"
@@ -75,7 +77,7 @@
               id="rock_btn"
             >
               <div
-                class="border-[18px] rounded-full p-6 border-[#DE3A55] bg-white mt-20 scale-150"
+                class="border-[18px] rounded-full p-6 border-[#DE3A55] bg-white md:mt-10 lg:mt-20 scale-90 md:scale-105 lg:scale-125 xl:scale-150"
               >
                 <img src="../assets/images/icon-rock.svg" alt="rock image" />
               </div>
@@ -217,7 +219,7 @@
       <!--! modal view ends -->
     </main>
     <footer class="max-w-screen-2xl">
-      <div class="mt-10 flex justify-end">
+      <div class="mt-10 flex justify-center lg:justify-end p-10">
         <button
           id="rules_modal_btn"
           class="text-white border px-8 py-[6px] rounded-md text-sm font-medium hover:text-blue-500 hover:bg-white hover:scale-105 transition-transform duration-200"
