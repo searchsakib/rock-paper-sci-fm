@@ -23,7 +23,7 @@
       type="module"
     ></script>
   </head>
-  <body class="bg-gradient-to-br from-[#1F3656] to-[#151B3D] h-screen">
+  <body class="bg-gradient-to-br from-[#1F3656] to-[#151B3D] min-h-screen">
     <header class="max-w-xl mx-auto px-5 pt-10 lg:pt-20">
       <div
         class="flex justify-between items-center border-[#5B6B85] border-2 text-white p-4 rounded-lg text-center gap-7 lg:gap-0"
@@ -93,9 +93,7 @@
       <!-- after click view starts  -->
       <div class="relative hidden" id="vs_view">
         <div>
-          <div
-            class="hidden md:flex items-center justify-center gap-16 lg:gap-36"
-          >
+          <div class="flex items-center justify-center gap-16 lg:gap-36">
             <div>
               <h2 class="text-center text-xl font-medium text-white mb-16">
                 You Picked
@@ -134,11 +132,11 @@
               </div>
             </div>
 
-            <!-- ! you win/lose message starts -->
+            <!-- ! you win/lose message starts for big screen -->
 
-            <a class="" href="">
+            <a class="hidden lg:block" href="">
               <div class="text-white text-center pt-12">
-                <h2 class="text-3xl font-medium pb-4" id="result_text"></h2>
+                <h2 class="text-3xl font-medium pb-4 result_text"></h2>
                 <button
                   class="text-sm text-red-500 px-8 font-semibold py-[6px] rounded-md bg-white"
                 >
@@ -187,102 +185,18 @@
             </div>
             <!-- computer pick ends  -->
           </div>
-          <!-- * mobile view for after click starts  -->
-          <div
-            class="md:hidden flex flex-col items-center justify-center gap-16"
-          >
-            <div>
-              <h2 class="text-center text-xl font-medium text-white mb-16">
-                You Picked
-              </h2>
-              <div class="hidden" id="confetti">
-                <dotlottie-player
-                  class="absolute top-0 left-[425px] z-50"
-                  src="https://lottie.host/20bec338-5560-4ded-8350-69353647fa60/vaf6IcgFZf.lottie"
-                  background="transparent"
-                  speed="1"
-                  style="width: 300px; height: 300px"
-                  loop
-                  autoplay
-                ></dotlottie-player>
-              </div>
-              <div
-                class="border-[18px] rounded-full p-6 bg-white size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150"
-                id="color_img"
+          <!-- ! you win/lose message starts for small screen -->
+          <a class="block lg:hidden" href="">
+            <div class="text-white text-center pt-12">
+              <h2 class="text-3xl font-medium pb-4 result_text"></h2>
+              <button
+                class="text-sm text-red-500 px-8 font-semibold py-[6px] rounded-md bg-white"
               >
-                <img
-                  class="w-20 hidden"
-                  id="img_paper"
-                  src="../assets/images/icon-paper.svg"
-                  alt="paper icon"
-                /><img
-                  class="w-20 hidden"
-                  id="img_scissors"
-                  src="../assets/images/icon-scissors.svg"
-                  alt="scissors icon"
-                /><img
-                  class="w-20 hidden"
-                  id="img_rock"
-                  src="../assets/images/icon-rock.svg"
-                  alt="rock icon"
-                />
-              </div>
+                PLAY AGAIN
+              </button>
             </div>
-
-            <!-- ! you win/lose message starts -->
-
-            <a class="" href="">
-              <div class="text-white text-center pt-12">
-                <h2 class="text-3xl font-medium pb-4" id="result_text"></h2>
-                <button
-                  class="text-sm text-red-500 px-8 font-semibold py-[6px] rounded-md bg-white"
-                >
-                  PLAY AGAIN
-                </button>
-              </div>
-            </a>
-
-            <!-- ! you win/lose message ends -->
-
-            <!-- computer pick starts  -->
-            <div>
-              <h2 class="text-center text-xl font-medium text-white mb-16">
-                AI Picked
-              </h2>
-
-              <div
-                class="bg-white items-center justify-center border-[18px] rounded-full p-6 size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150 paper_btn border-[#526EF4] hidden"
-              >
-                <img
-                  class="w-20"
-                  src="../assets/images/icon-paper.svg"
-                  alt="computer picked paper"
-                />
-              </div>
-
-              <div
-                class="bg-white items-center justify-center border-[18px] rounded-full p-6 size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150 scissors_btn border-[#E9A51E] hidden"
-              >
-                <img
-                  class="w-20"
-                  src="../assets/images/icon-scissors.svg"
-                  alt="computer picked scissors"
-                />
-              </div>
-
-              <div
-                class="bg-white items-center justify-center border-[18px] rounded-full p-6 size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150 rock_btn border-[#DE3A55] hidden"
-              >
-                <img
-                  class="w-20"
-                  src="../assets/images/icon-rock.svg"
-                  alt="computer picked rock"
-                />
-              </div>
-            </div>
-            <!-- computer pick ends  -->
-          </div>
-          <!-- * mobile view for after click ends -->
+          </a>
+          <!-- ! you win/lose message ends -->
         </div>
       </div>
       <!-- after click view ends -->

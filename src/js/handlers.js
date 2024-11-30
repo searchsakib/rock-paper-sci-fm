@@ -13,6 +13,11 @@ import {
   vsView,
 } from "./selectors.js";
 
+//! A function for showing resultText, because I used querySelectorAll, and it became an array:
+const text = (message) => {
+  resultText.forEach((eachResultText) => (eachResultText.innerText = message));
+};
+
 // toggling the modal
 export const toggleRulesModal = () => {
   rulesModal.classList.toggle("hidden");
@@ -55,14 +60,14 @@ export const showVsMode = (e) => {
     colorImg.classList.add("border-[#526EF4]");
     if (btnSelect.id === RNG) {
       console.log("DRAW");
-      resultText.innerText = "DRAW!";
+      text("DRAW!");
     } else if (RNG === "scissors_btn") {
       console.log("YOU LOSE");
-      resultText.innerText = "YOU LOSE!";
+      text("YOU LOSE!");
     } else {
       console.log("YOU WIN");
       confetti.classList.toggle("hidden");
-      resultText.innerText = "YOU WIN!";
+      text("YOU WIN!");
     }
   } else if (btnSelect.id === "scissors_btn") {
     defaultView.classList.toggle("hidden");
@@ -71,14 +76,14 @@ export const showVsMode = (e) => {
     colorImg.classList.add("border-[#E9A51E]");
     if (btnSelect.id === RNG) {
       console.log("DRAW");
-      resultText.innerText = "DRAW!";
+      text("DRAW!");
     } else if (RNG === "paper_btn") {
       console.log("YOU WIN");
       confetti.classList.toggle("hidden");
-      resultText.innerText = "YOU WIN!";
+      text("YOU WIN!");
     } else {
       console.log("YOU LOSE");
-      resultText.innerText = "YOU LOSE!";
+      text("YOU LOSE!");
     }
   } else {
     defaultView.classList.toggle("hidden");
@@ -87,14 +92,14 @@ export const showVsMode = (e) => {
     colorImg.classList.add("border-[#DE3A55]");
     if (btnSelect.id === RNG) {
       console.log("DRAW");
-      resultText.innerText = "DRAW!";
+      text("DRAW!");
     } else if (RNG === "paper_btn") {
       console.log("YOU LOSE");
-      resultText.innerText = "YOU LOSE!";
+      text("YOU LOSE!");
     } else {
       console.log("YOU WIN");
       confetti.classList.toggle("hidden");
-      resultText.innerText = "YOU WIN!";
+      text("YOU WIN!");
     }
   }
   console.log("My pick: " + e.target.closest(".game-btn").id);

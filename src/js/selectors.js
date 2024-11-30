@@ -11,5 +11,5 @@ export const gameBtn = document.querySelectorAll(".game-btn");
 export const computerPaper = document.querySelector(".paper_btn");
 export const computerScissors = document.querySelector(".scissors_btn");
 export const computerRock = document.querySelector(".rock_btn");
-export const resultText = document.getElementById("result_text");
+export const resultText = document.querySelectorAll(".result_text");
 export const confetti = document.getElementById("confetti");
