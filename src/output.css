@@ -586,6 +586,14 @@ video {
   top: 3rem;
 }
 
+.left-\[435px\] {
+  left: 435px;
+}
+
+.left-\[440px\] {
+  left: 440px;
+}
+
 .-z-10 {
   z-index: -10;
 }
