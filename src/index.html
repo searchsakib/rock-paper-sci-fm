@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,17 +23,17 @@
       type="module"
     ></script>
   </head>
-  <body class="bg-gradient-to-br from-[#1F3656] to-[#151B3D] min-h-screen">
-    <header class="max-w-xl mx-auto px-5 pt-10 lg:pt-20">
+  <body class="min-h-screen bg-gradient-to-br from-[#1F3656] to-[#151B3D]">
+    <header class="mx-auto max-w-xl px-5 pt-10 lg:pt-20">
       <div
-        class="flex justify-between items-center border-[#5B6B85] border-2 text-white p-4 rounded-lg text-center gap-7 lg:gap-0"
+        class="flex items-center justify-between gap-7 rounded-lg border-2 border-[#5B6B85] p-4 text-center text-white lg:gap-0"
       >
         <div class="text-left">
           <img src="../assets/images/logo.svg" alt="logo" />
         </div>
         <div>
-          <div class="bg-white rounded-md px-8 py-4 scale-90 lg:scale-100">
-            <p class="text-[#848BDB] font-semibold tracking-widest">SCORE</p>
+          <div class="scale-90 rounded-md bg-white px-8 py-4 lg:scale-100">
+            <p class="font-semibold tracking-widest text-[#848BDB]">SCORE</p>
             <p class="text-4xl font-bold text-[#56526B]">12</p>
           </div>
         </div>
@@ -47,21 +47,21 @@
             class="flex items-center justify-center gap-10 sm:gap-16 md:gap-20 lg:gap-28 xl:gap-32 2xl:gap-40"
           >
             <button
-              class="transition-transform duration-300 lg:hover:scale-105 game-btn"
+              class="game-btn transition-transform duration-300 lg:hover:scale-105"
               id="paper_btn"
             >
               <div
-                class="border-[18px] rounded-full p-6 border-[#526EF4] bg-white size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150"
+                class="size-32 scale-90 rounded-full border-[18px] border-[#526EF4] bg-white p-6 md:scale-105 lg:scale-125 xl:scale-150"
               >
                 <img src="../assets/images/icon-paper.svg" alt="paper image" />
               </div>
             </button>
             <button
-              class="transition-transform duration-300 hover:scale-105 game-btn"
+              class="game-btn transition-transform duration-300 hover:scale-105"
               id="scissors_btn"
             >
               <div
-                class="border-[18px] rounded-full p-6 border-[#E9A51E] bg-white size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150"
+                class="size-32 scale-90 rounded-full border-[18px] border-[#E9A51E] bg-white p-6 md:scale-105 lg:scale-125 xl:scale-150"
               >
                 <img
                   src="../assets/images/icon-scissors.svg"
@@ -73,11 +73,11 @@
 
           <div class="flex items-center justify-center">
             <button
-              class="transform duration-300 hover:scale-105 game-btn"
+              class="game-btn transform duration-300 hover:scale-105"
               id="rock_btn"
             >
               <div
-                class="border-[18px] rounded-full p-6 border-[#DE3A55] bg-white md:mt-10 lg:mt-20 scale-90 md:scale-105 lg:scale-125 xl:scale-150"
+                class="scale-90 rounded-full border-[18px] border-[#DE3A55] bg-white p-6 md:mt-10 md:scale-105 lg:mt-20 lg:scale-125 xl:scale-150"
               >
                 <img src="../assets/images/icon-rock.svg" alt="rock image" />
               </div>
@@ -95,12 +95,12 @@
         <div>
           <div class="flex items-center justify-center gap-16 lg:gap-36">
             <div>
-              <h2 class="text-center text-xl font-medium text-white mb-16">
+              <h2 class="mb-16 text-center text-xl font-medium text-white">
                 You Picked
               </h2>
               <div class="hidden" id="confetti">
                 <dotlottie-player
-                  class="absolute top-0 left-[440px] z-50"
+                  class="absolute left-[440px] top-0 z-50"
                   src="https://lottie.host/20bec338-5560-4ded-8350-69353647fa60/vaf6IcgFZf.lottie"
                   background="transparent"
                   speed="1"
@@ -110,21 +110,21 @@
                 ></dotlottie-player>
               </div>
               <div
-                class="border-[18px] rounded-full p-6 bg-white size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150"
+                class="size-32 scale-90 rounded-full border-[18px] bg-white p-6 md:scale-105 lg:scale-125 xl:scale-150"
                 id="color_img"
               >
                 <img
-                  class="w-20 hidden"
+                  class="hidden w-20"
                   id="img_paper"
                   src="../assets/images/icon-paper.svg"
                   alt="paper icon"
                 /><img
-                  class="w-20 hidden"
+                  class="hidden w-20"
                   id="img_scissors"
                   src="../assets/images/icon-scissors.svg"
                   alt="scissors icon"
                 /><img
-                  class="w-20 hidden"
+                  class="hidden w-20"
                   id="img_rock"
                   src="../assets/images/icon-rock.svg"
                   alt="rock icon"
@@ -135,10 +135,10 @@
             <!-- ! you win/lose message starts for big screen -->
 
             <a class="hidden lg:block" href="">
-              <div class="text-white text-center pt-12">
-                <h2 class="text-3xl font-medium pb-4 result_text"></h2>
+              <div class="pt-12 text-center text-white">
+                <h2 class="result_text pb-4 text-3xl font-medium"></h2>
                 <button
-                  class="text-sm text-red-500 px-8 font-semibold py-[6px] rounded-md bg-white"
+                  class="rounded-md bg-white px-8 py-[6px] text-sm font-semibold text-red-500"
                 >
                   PLAY AGAIN
                 </button>
@@ -149,12 +149,12 @@
 
             <!-- computer pick starts  -->
             <div>
-              <h2 class="text-center text-xl font-medium text-white mb-16">
+              <h2 class="mb-16 text-center text-xl font-medium text-white">
                 AI Picked
               </h2>
 
               <div
-                class="bg-white items-center justify-center border-[18px] rounded-full p-6 size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150 paper_btn border-[#526EF4] hidden"
+                class="paper_btn hidden size-32 scale-90 items-center justify-center rounded-full border-[18px] border-[#526EF4] bg-white p-6 md:scale-105 lg:scale-125 xl:scale-150"
               >
                 <img
                   class="w-20"
@@ -164,7 +164,7 @@
               </div>
 
               <div
-                class="bg-white items-center justify-center border-[18px] rounded-full p-6 size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150 scissors_btn border-[#E9A51E] hidden"
+                class="scissors_btn hidden size-32 scale-90 items-center justify-center rounded-full border-[18px] border-[#E9A51E] bg-white p-6 md:scale-105 lg:scale-125 xl:scale-150"
               >
                 <img
                   class="w-20"
@@ -174,7 +174,7 @@
               </div>
 
               <div
-                class="bg-white items-center justify-center border-[18px] rounded-full p-6 size-32 scale-90 md:scale-105 lg:scale-125 xl:scale-150 rock_btn border-[#DE3A55] hidden"
+                class="rock_btn hidden size-32 scale-90 items-center justify-center rounded-full border-[18px] border-[#DE3A55] bg-white p-6 md:scale-105 lg:scale-125 xl:scale-150"
               >
                 <img
                   class="w-20"
@@ -187,10 +187,10 @@
           </div>
           <!-- ! you win/lose message starts for small screen -->
           <a class="block lg:hidden" href="">
-            <div class="text-white text-center pt-12">
-              <h2 class="text-3xl font-medium pb-4 result_text"></h2>
+            <div class="pt-12 text-center text-white">
+              <h2 class="result_text pb-4 text-3xl font-medium"></h2>
               <button
-                class="text-sm text-red-500 px-8 font-semibold py-[6px] rounded-md bg-white"
+                class="rounded-md bg-white px-8 py-[6px] text-sm font-semibold text-red-500"
               >
                 PLAY AGAIN
               </button>
@@ -205,13 +205,13 @@
 
       <div
         id="rules_modal"
-        class="hidden fixed z-50 top-0 left-0 w-full h-full bg-[#00000066] items-center justify-center"
+        class="fixed left-0 top-0 z-50 hidden h-full w-full items-center justify-center bg-[#00000066]"
       >
         <div
-          class="bg-white p-7 items-center justify-center max-w-sm mx-auto rounded-md flex flex-col"
+          class="mx-auto flex max-w-sm flex-col items-center justify-center rounded-md bg-white p-7"
         >
           <div class="flex items-center gap-64 pb-8">
-            <h2 class="font-bold text-xl text-[#1C2D4E]">RULES</h2>
+            <h2 class="text-xl font-bold text-[#1C2D4E]">RULES</h2>
             <button id="close_btn">
               <img
                 class="scale-150"
@@ -231,10 +231,10 @@
       <!--! modal view ends -->
     </main>
     <footer class="max-w-screen-2xl">
-      <div class="mt-10 flex justify-center lg:justify-end p-10">
+      <div class="mt-10 flex justify-center p-10 lg:justify-end">
         <button
           id="rules_modal_btn"
-          class="text-white border px-8 py-[6px] rounded-md text-sm font-medium hover:text-blue-500 hover:bg-white hover:scale-105 transition-transform duration-200"
+          class="rounded-md border px-8 py-[6px] text-sm font-medium text-white transition-transform duration-200 hover:scale-105 hover:bg-white hover:text-blue-500"
         >
           RULES
         </button>
