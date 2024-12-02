@@ -98,17 +98,24 @@
               <h2 class="mb-16 text-center text-xl font-medium text-white">
                 You Picked
               </h2>
-              <div class="hidden" id="confetti">
+
+              <!-- animation -->
+
+              <div
+                class="absolute -top-32 left-1/2 z-40 hidden -translate-x-1/2 md:-top-40 lg:-top-48 xl:-top-52"
+                id="confetti"
+              >
                 <dotlottie-player
-                  class="absolute left-[440px] top-0 z-50"
+                  class="h-20 w-20 scale-150 md:h-28 md:w-28 md:scale-150 lg:h-36 lg:w-36 lg:scale-150 xl:h-44 xl:w-44 xl:scale-150"
                   src="https://lottie.host/20bec338-5560-4ded-8350-69353647fa60/vaf6IcgFZf.lottie"
                   background="transparent"
                   speed="1"
-                  style="width: 300px; height: 300px"
                   loop
                   autoplay
                 ></dotlottie-player>
               </div>
+
+              <!-- animation ends  -->
               <div
                 class="size-32 scale-90 rounded-full border-[18px] bg-white p-6 md:scale-105 lg:scale-125 xl:scale-150"
                 id="color_img"
